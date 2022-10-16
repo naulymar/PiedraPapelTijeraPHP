@@ -26,38 +26,37 @@
         </form>
     
     <?php 
-
         if($_POST){
            if($_REQUEST['opcion-jugador'] == NULL){
                 echo 'Selecciona una Opción';
            }else{
                 if($_REQUEST['opcion-jugador'] == 'piedra'){
                     $seleccionJugador = 1;
-                    echo '<br>Seleccionaste PIEDRA';
+                    echo '<br>Seleccionaste <label class="tag-seleccion">PIEDRA</label>';
                 }elseif($_REQUEST['opcion-jugador'] == 'papel'){
                     $seleccionJugador = 2;
-                    echo '<br>Seleccionaste PAPEL';
+                    echo '<br>Seleccionaste <label class="tag-seleccion">PAPEL</label>';
                 }else{
                     $seleccionJugador = 3;
-                    echo '<br>Seleccionaste TIJERA';
+                    echo '<br>Seleccionaste <label class="tag-seleccion">TIJERA</label>';
                 }
 
                 if($seleccionJugador != NULL){
                     $seleccionPC = rand(1, 3);
                     if($seleccionPC == 1){
-                        echo '<br>La selección del PC es PIEDRA';
+                        echo '<br>La selección del PC es <label class="tag-seleccion">PIEDRA</label>';
                     }elseif($seleccionPC == 2){
-                        echo '<br>La selección del PC es PAPEL';
-                    }else echo '<br>La selección del PC es TIJERA';
+                        echo '<br>La selección del PC es <label class="tag-seleccion">PAPEL</label>';
+                    }else echo '<br>La selección del PC es <label class="tag-seleccion">TIJERA</label>';
                 }
 
                 if($seleccionPC != NULL){
                     if($seleccionJugador == $seleccionPC){
-                        echo '<br>Hay un EMPATE';
+                        echo '<br><label class="tag-resultado">Hay un EMPATE</label>';
                     }elseif(($seleccionJugador == 1 && $seleccionPC == 3) || ($seleccionJugador == 2 && $seleccionPC == 1) || ($seleccionJugador == 3 && $seleccionPC == 2)){
-                        echo '<br>GANASTE';
+                        echo '<br><label class="tag-resultado">GANASTE</label>';
                     }else{
-                        echo '<br>PERDISTE';
+                        echo '<br><label class="tag-resultado">PERDISTE</label>';
                     }
                 }
            }

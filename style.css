@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2rem;
 }
 
 input{
@@ -36,6 +37,7 @@ input{
 
 h1{
     margin: 2rem 1.5rem 1rem 1.5rem;
+    font-size: 4rem;
 }
 
 #seccion-opciones-jugador{
@@ -61,7 +63,7 @@ h1{
 input[type="radio"]:checked + label{
     width: 8.5rem;
     height: 6.5rem;
-    background-color: rgb(124, 166, 223);
+    background-color: lightcoral;
 }
 
 #boton-seleccionar{
@@ -73,6 +75,14 @@ input[type="radio"]:checked + label{
     border-radius: 1rem;
     font-family: 'Mouse Memoirs', sans-serif;
     font-size: 1.5rem;
+}
+
+.tag-seleccion{
+    background-color: aqua;
+}
+
+.tag-resultado{
+    background-color: lightcoral;
 }
 
 
