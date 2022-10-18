@@ -1,10 +1,6 @@
 ## Overview
 ![Preview Design](./design/PiedraPapelTijeraPHP.png)
 
-### Links
-
-- Repository URL: https://github.com/naulymar/PiedraPapelTijeraPHP.git
-
 ## My process
 
 ### Built with
@@ -17,3 +13,4 @@
 ## Author
 
 - Website - https://github.com/naulymar
+- Repository URL: https://github.com/naulymar/PiedraPapelTijeraPHP.git
